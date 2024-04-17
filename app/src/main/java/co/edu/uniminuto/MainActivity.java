@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
     public static final int REQUEST_CODE = 25;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 101;
     private static final int CONTACTS_PERMISSION_REQUEST_CODE = 102;
+
+
+
+    private static  final int Prueba_external = 30;
     private static final int BIOMETRIC_PERMISSION_REQUEST_CODE = 103;
     //1. declaracion de los objetos de la interface que se usaran en la párte logica
     private Button btnCheckPermissions;
@@ -137,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
         tvInternet.setText("Status Internet:" + statusInternet);
         tvBiometric.setText("Status Biometric:" + statusBiometric);
         btnRequestPermissions.setEnabled(true);
+
     }
 
     //6. Solicitud de permiso de Camara
@@ -146,14 +151,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // 6. Solicitud de permiso para el biometrico
+    // 6. Solicitud de permiso para el EXTERNAL STORAGE
     private void voidRequestBiometricPermissions(View view) {
-        if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.USE_BIOMETRIC) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             // Solicitar permiso para usar el biometrico
-            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.USE_BIOMETRIC}, BIOMETRIC_PERMISSION_REQUEST_CODE);
+            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_CODE);
         }
     }
-
+// SOLICITUD PERMISOS CONTACTOS
     public void onClick(View v) {
         if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_CONTACTS)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -162,6 +167,17 @@ public class MainActivity extends AppCompatActivity {
                     CONTACTS_PERMISSION_REQUEST_CODE);
         }
     }
+
+    public void onClicky(View v) {
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                   REQUEST_CODE);
+        }
+    }
+
+
     //7. Gestion de respuesta del usuario respecto a la solicitud del permiso
 
 
