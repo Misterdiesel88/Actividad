@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <TextView
+        android:id="@+id/tvTitulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvTitulo1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tvVersionAndroidLB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvVersionAndroidLB" />
+
+    <TextView
+        android:id="@+id/tvVersionAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvVersionAndroid" />
+
+    <TextView
+        android:id="@+id/tvLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvLight" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:paddingVertical="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <Button
+            android:id="@+id/btnOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnOff" />
+
+        <Button
+            android:id="@+id/btnOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnOn" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tvLevelBatteryLB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvLevelBattery" />
+
+    <TextView
+        android:id="@+id/tvLevelBattery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvLevelBattery_2" />
+
+    <ProgressBar
+        android:id="@+id/pbLevelBattery"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"/>
+
+    <TextView
+        android:id="@+id/tvConectionLB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvState" />
+
+    <TextView
+        android:id="@+id/tvConexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvConexion" />
+
+    <TextView
+        android:id="@+id/tvTitulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvTitulo2" />
+
+    <TextView
+        android:id="@+id/tvDactilar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:textSize="18dp"
+        android:text="@string/tvDactilar"
+        android:textColor="#65057B"
+        android:background="@drawable/text_background"/>
+
+    <TextView
+        android:id="@+id/tvCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:textColor="#65057B"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvCamera"
+        android:background="@drawable/text_background"/>
+
+    <TextView
+        android:id="@+id/tvEws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:textColor="#65057B"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvEws"
+        android:background="@drawable/text_background"/>
+
+    <TextView
+        android:id="@+id/tvRS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:textColor="#65057B"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvRs"
+        android:background="@drawable/text_background"/>
+
+
+    <TextView
+        android:id="@+id/tvReadContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/text_background"
+        android:paddingVertical="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/tvReadContacts"
+        android:textColor="#65057B"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnCheckPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="@string/btnCheckPermission" />
+
+    <Button
+        android:id="@+id/btnRequestPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="@string/btnRequestPermission" />
+
+    <Button
+        android:id="@+id/btnRequestLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnRequestPermissionLocation" />
+
+    <Button
+        android:id="@+id/btnRequestReadContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnRequestPermissionReadContacts" />
+
+    <Button
+        android:id="@+id/btnRequestExternalStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnRequestPermissionExternalStorage" />
+
+    <Button
+        android:id="@+id/btnRequestReadStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnRequestPermissionReadStorage" />
+
+    <TextView
+        android:id="@+id/tvResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingVertical="3dp"
+        android:text="@string/tvResponse" />
+</LinearLayout>
